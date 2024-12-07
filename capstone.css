@@ -14,8 +14,9 @@ body{
 .nav-bar{
     height: 132pxpx;
     padding: 36px 0px 0px 0px;
+    display: flex;
     gap: 8px;
-
+    justify-content: center;
     
 }
 .nav-box{
@@ -27,6 +28,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 36px 44px;
     
 }
