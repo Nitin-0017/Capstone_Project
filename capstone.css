@@ -130,4 +130,48 @@
 
 .service-item {
     flex: 1;
+    
+}
+
+
+.portfolio-grid {
+    display: flex;
+    gap: 40px 54px;
+    padding: 54px 0;
+    flex-wrap: wrap;
+}
+
+.portfolio-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 54px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-image {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: var(--aspect-ratio, 1.3);
+    object-fit: contain;
+}
+
+.portfolio-content {
+    margin-top: 12px;
+}
+
+.portfolio-title {
+    color: rgba(215, 228, 228, 1);
+    font: 400 20px/1.2 Public Sans, sans-serif;
+    letter-spacing: -0.1px;
+}
+
+.portfolio-category {
+    color: rgba(209, 235, 235, 0.62);
+    font: 400 17px/1 Public Sans, sans-serif;
+    letter-spacing: -0.09px;
 }
