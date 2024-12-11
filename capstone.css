@@ -49,3 +49,85 @@
 
 
 }
+
+.main-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+}
+
+.hero-section {
+    background-color: rgba(13, 2, 8, 1);
+    text-align: center;
+    color: rgba(215, 228, 228, 1);
+    padding: 96px 0;
+}
+
+.hero-title {
+    font: 700 120px/120px Roboto Serif, serif;
+    letter-spacing: -2.4px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 28px;
+    margin-top: 54px;
+    aspect-ratio: 2;
+    object-fit: contain;
+    alt: "Memphis design inspired hero image";
+}
+
+.about-section {
+    width: 60%;
+    background-color: rgba(13, 2, 8, 1);
+    color: rgba(215, 228, 228, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 96px 0;
+    font: 400 48px/52px Roboto Serif, serif;
+    letter-spacing: -0.96px;
+}
+
+.services-section {
+    background-color: rgba(13, 2, 8, 1);
+    display: flex;
+    width: 100%;
+    gap: 40px 54px;
+    color: rgba(215, 228, 228, 1);
+    padding: 54px 0;
+    flex-wrap: wrap;
+}
+
+.services-title {
+    letter-spacing: -0.56px;
+    flex: 1;
+    font: 700 28px/1 Roboto Serif, serif;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.1px;
+    flex: 1;
+    font: 400 20px/1.2 Public Sans, sans-serif;
+}
+
+.services-row {
+    display: flex;
+    width: 100%;
+    gap: 40px 54px;
+    margin-top: 22px;
+}
+
+.services-row:first-child {
+    margin-top: 0;
+}
+
+.service-item {
+    flex: 1;
+}
