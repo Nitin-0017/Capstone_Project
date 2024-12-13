@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.portfolio-wrapper {
+.container{
     display: flex;
     flex-direction: column;
     padding: 0 3rem;
@@ -105,7 +104,6 @@
     text-align: center;
     padding: 6rem 0;
     font: 400 48px/52px Roboto Serif, serif;
-    /* letter-spacing: -0.96px; */
 }
 
 
@@ -194,69 +192,103 @@
     margin-top: 1.5rem;
 }
 
-.services-row:first-child {
-    margin-top: 0;
-}
-
-.service-item {
-    flex: 1;
-}
-
-.portfolio-grid {
+.flex {
     display: flex;
     gap: 2.4rem 3.4rem;
     padding: 3.4rem 0;
     flex-wrap: wrap;
 }
 
-.portfolio-column {
+.flex_column {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 3.4rem;
 }
 
-.portfolio-item {
+.flex_item {
     display: flex;
     flex-direction: column;
 }
 
-.portfolio-image {
-    width: 100%;
+.flex_image1 {
+    width: 416px;
+    height: 319px;
     border-radius: 1rem;
-    aspect-ratio: var(--aspect-ratio, 1.3);
-    object-fit: contain;
+}
+.flex_image2 {
+    width: 416px;
+    Height: 230px;
+    border-radius: 1rem;
+}
+.flex_image3 {
+    width: 416px;
+    height: 412px;
+    border-radius: 1rem;
+}
+.flex_image4 {
+    width: 416px;
+    height: 412px;
+    border-radius: 1rem;
+}
+.flex_image5 {
+    width: 416px;
+    height: 319px;
+    border-radius: 1rem;
+}
+.flex_image6 {
+    width: 416px;
+    height: 230px;
+    border-radius: 1rem;
+}
+.flex_image7 {
+    width: 416px;
+    height: 230px;
+    border-radius: 1rem;
+}
+.flex_image8 {
+    width: 416px;
+    height: 412px;
+    border-radius: 1rem;
+}
+.flex_image9 {
+    width: 416px;
+    height: 319px;
+    border-radius: 1rem;
 }
 
-.portfolio-content {
+.flex_content {
     margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.portfolio-title {
+.flex_title {
     color: rgba(215, 228, 228, 1);
     font: 400 20px/1.2 Public Sans, sans-serif;
     /* letter-spacing: -0.1px; */
 }
 
-.portfolio-category {
+.flex_category {
     color: rgba(209, 235, 235, 0.62);
     font: 400 17px/1 Public Sans, sans-serif;
     /* letter-spacing: -0.09px; */
 }
 
-.testimonials-section {
+.card_section {
     background-color: rgba(13, 2, 8, 1);
     text-align: center;
     padding: 3.4rem 0;
 }
 
-.testimonials-title {
+.card_title {
     color: rgba(215, 228, 228, 1);
     font: 700 48px/1 Roboto Serif, serif;
     /* letter-spacing: -0.96px; */
 }
 
-.testimonials-grid {
+.card_grid {
     display: flex;
     gap: 2.2rem;
     margin-top: 3.4rem;
@@ -264,7 +296,7 @@
     padding-bottom: 1.4rem;
 }
 
-.testimonial-card {
+.card {
     border-radius: 1.4rem;
     background-color: rgba(184, 224, 224, 0.12);
     min-width: 15rem;
@@ -277,20 +309,20 @@
     align-items: center;
 }
 
-.testimonial-header {
+.card_header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
 
-.testimonial-avatar {
+.card_avatar {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.testimonial-info {
+.card_info {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -298,17 +330,17 @@
     text-align: left;
 }
 
-.testimonial-name {
+.card_name {
     color: rgba(215, 228, 228, 1);
     font: 700 15px/1 Public Sans, sans-serif;
 }
 
-.testimonial-role {
+.card_role {
     color: rgba(209, 235, 235, 0.62);
     font: 400 15px/1 Public Sans, sans-serif;
 }
 
-.testimonial-content {
+.card_content {
     width: 100%;
     display: flex;
     gap: 1rem;
@@ -327,7 +359,7 @@
     background-color: rgba(255, 255, 255, 0.264);
 }
 
-.testimonial-quote {
+.card_quote {
     color: rgba(215, 228, 228, 0.7);
     font: 400 20px/24px Public Sans, sans-serif;
     /* letter-spacing: -0.1px; */
