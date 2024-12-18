@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 .container{
     display: flex;
@@ -21,47 +25,39 @@
     flex-direction: column;
     align-items: center;
     color: rgba(215, 228, 228, 1);
-    letter-spacing: -0.09px;
-    font: 400 17px/1 Public Sans, sans-serif;
+    font-family: Public Sans, sans-serif;
 }
 
 .nav-container {
     border-radius: 1.2rem;
     background-color: rgba(143, 253, 255, 0.2);
-    box-shadow: 0 0.25rem 1.6rem rgba(0, 0, 0, 0.16);
-    position: relative;
     display: flex;
     width: 75%;
     height: 70%;
-    max-width: 100%;
     align-items: center;
-    overflow: hidden;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1.5rem 2.8rem;
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
-    z-index: 1;
 }
 
 .nav-link {
     text-decoration: none;
-    cursor: pointer;
     font-family: Public Sans;
     font-size: 1.1rem;
     font-weight: 400;
     color: #D7E4E4;
 }
 
-.brand-logo {
+.heading {
     font-family: Serif;
     font-size: 2.6rem;
     font-weight: 600;
     color: #D7E4E4;
-
-
 }
 
 .main-content {
@@ -73,28 +69,31 @@
     padding: 3rem 0;
 }
 
-.hero-section {
+.section-one {
+    width: 100%;
     background-color: rgba(13, 2, 8, 1);
     text-align: center;
     color: rgba(215, 228, 228, 1);
-    padding: 6rem 0;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-title {
-    font: 700 120px/120px Roboto Serif, serif;
-    /* letter-spacing: -2.4px; */
+.main-h1 {
+    font-size: 7.5rem;
+    font-weight: 700;
+    font-family: Roboto Serif, serif;
 }
 
-.hero-image {
+.image1 {
     width: 100%;
     border-radius: 1.8rem;
     margin-top: 4rem;
-    aspect-ratio: 2;
-    object-fit: contain;
-    alt: "Memphis design inspired hero image";
 }
 
-.about-section {
+.main-para {
     width: 60%;
     background-color: rgba(13, 2, 8, 1);
     color: rgba(215, 228, 228, 1);
@@ -103,13 +102,14 @@
     align-items: center;
     text-align: center;
     padding: 6rem 0;
-    font: 400 48px/52px Roboto Serif, serif;
+    font-family: Roboto Serif, serif;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 
 .row1 {
     width: 100%;
-    /* height: 736px; */
     padding: 2.25rem 0;
     gap: 3.4rem;
     display: flex;
@@ -120,18 +120,15 @@
     width: 645px;
     height: 664px;
     border-radius: 1rem;
-    /* border: 1.5px; */
 }
 .row1 .img2 {
     width: 645px;
     height: 443px;
     border-radius: 1rem;
-    /* border: 1.5px; */
 
 }
 .row2 {
     width: 100%;
-    /* height: 744px; */
     padding: 2.25rem 0;
     display: flex;
     justify-content: end;
@@ -143,7 +140,6 @@
 }
 .row3 {
     width: 100%;
-    /* height: 736px; */
     padding: 2.25rem 0;
     gap: 3.4rem;
     display: flex;
@@ -161,168 +157,182 @@
     border-radius: 1rem;
 
 }
-.services-section {
+.section-three {
     background-color: rgba(13, 2, 8, 1);
     display: flex;
+    justify-content: space-between;
     width: 100%;
     gap: 2.4rem 3.4rem;
     color: rgba(215, 228, 228, 1);
     padding: 3.5rem 0;
-    flex-wrap: wrap;
 }
 
-.services-title {
-    /* letter-spacing: -0.56px; */
-    flex: 1;
-    font: 700 28px/1 Roboto Serif, serif;
+.services-heading {
+    font-family: Roboto Serif, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.services-grid {
+.services-name {
+    width: 45%;
     display: flex;
-    flex-direction: column;
-    /* letter-spacing: -0.1px; */
-    flex: 1;
-    font: 400 20px/1.2 Public Sans, sans-serif;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Public Sans;
 }
 
 .services-row {
     display: flex;
+    flex-direction: column;
+    text-align: left;
     width: 100%;
     gap: 2.4rem 3.4rem;
     margin-top: 1.5rem;
 }
 
-.flex {
+.projects {
     display: flex;
     gap: 2.4rem 3.4rem;
     padding: 3.4rem 0;
     flex-wrap: wrap;
 }
 
-.flex_column {
+.column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     gap: 3.4rem;
 }
 
-.flex_item {
+.project-box {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    gap: 0.5rem;
 }
 
-.flex_image1 {
+.project1 {
     width: 416px;
     height: 319px;
     border-radius: 1rem;
 }
-.flex_image2 {
+.project2 {
     width: 416px;
     Height: 230px;
     border-radius: 1rem;
 }
-.flex_image3 {
+.project3 {
     width: 416px;
     height: 412px;
     border-radius: 1rem;
 }
-.flex_image4 {
+.project4 {
     width: 416px;
     height: 412px;
     border-radius: 1rem;
 }
-.flex_image5 {
+.project5 {
     width: 416px;
     height: 319px;
     border-radius: 1rem;
 }
-.flex_image6 {
+.project6 {
     width: 416px;
     height: 230px;
     border-radius: 1rem;
 }
-.flex_image7 {
+.project7 {
     width: 416px;
     height: 230px;
     border-radius: 1rem;
 }
-.flex_image8 {
+.project8 {
     width: 416px;
     height: 412px;
     border-radius: 1rem;
 }
-.flex_image9 {
+.project9 {
     width: 416px;
     height: 319px;
     border-radius: 1rem;
 }
 
-.flex_content {
-    margin-top: 0.75rem;
+.project-text {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.flex_title {
+.project-no {
+    text-align: left;
+    margin: 0;
     color: rgba(215, 228, 228, 1);
-    font: 400 20px/1.2 Public Sans, sans-serif;
-    /* letter-spacing: -0.1px; */
+    font-family: Public Sans, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
-.flex_category {
+.project-name {
+    text-align: left;
+    margin: 0;
     color: rgba(209, 235, 235, 0.62);
-    font: 400 17px/1 Public Sans, sans-serif;
-    /* letter-spacing: -0.09px; */
+    font-family: Public Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.card_section {
+.section-five {
+    width: 100%;
     background-color: rgba(13, 2, 8, 1);
     text-align: center;
     padding: 3.4rem 0;
 }
 
-.card_title {
+.client-heading {
     color: rgba(215, 228, 228, 1);
-    font: 700 48px/1 Roboto Serif, serif;
-    /* letter-spacing: -0.96px; */
+    font-family: Roboto Serif, serif;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
-.card_grid {
+.clients {
+    width: 100%;
     display: flex;
     gap: 2.2rem;
     margin-top: 3.4rem;
-    overflow-x: auto;
     padding-bottom: 1.4rem;
 }
 
 .card {
+    width: 100%;
+    height: fit-content;
     border-radius: 1.4rem;
     background-color: rgba(184, 224, 224, 0.12);
-    min-width: 15rem;
-    width: 18rem;
     padding: 2.2rem;
-    border: 2px solid transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.card_header {
+.client {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
 
-.card_avatar {
+.client-photo {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-.card_info {
+.about-client {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -330,17 +340,31 @@
     text-align: left;
 }
 
-.card_name {
+.about-client h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.about-client p {
+    margin: 0;
+    padding: 0;
+}
+
+.client-name {
     color: rgba(215, 228, 228, 1);
-    font: 700 15px/1 Public Sans, sans-serif;
+    font-family: Public Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
-.card_role {
+.client-job {
     color: rgba(209, 235, 235, 0.62);
-    font: 400 15px/1 Public Sans, sans-serif;
+    font-family: Public Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.card_content {
+.client-para {
     width: 100%;
     display: flex;
     gap: 1rem;
@@ -359,82 +383,41 @@
     background-color: rgba(255, 255, 255, 0.264);
 }
 
-.card_quote {
+.client-txt {
     color: rgba(215, 228, 228, 0.7);
-    font: 400 20px/24px Public Sans, sans-serif;
-    /* letter-spacing: -0.1px; */
+    font-family: Public Sans, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: left;
 }
 
-.footer {
+.section-six {
+    width: 100%;
     background-color: rgba(13, 2, 8, 1);
     padding: 6rem 0 2.25rem;
 }
 
-.footer-container {
+.section-six-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2.rem 6.25rem;
-    flex-wrap: wrap;
 }
 
-.footer-copyright {
+.section-six-heading {
     color: rgba(209, 235, 235, 0.62);
-    font: 400 28px/1 Roboto Serif, serif;
-    /* letter-spacing: -0.56px; */
+    font-family: Roboto Serif, serif;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
-.contact-button {
+.button {
     border-radius: 1rem;
     color: rgba(215, 228, 228, 1);
     padding: 1rem 2.25rem;
-    font: 500 20px/1.2 Public Sans, sans-serif;
-    border: 2px solid rgba(145, 181, 182, 0.2);
-    cursor: pointer;
+    font-family: Public Sans, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1.5px solid #91B5B633;
     background-color:black;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-@media (max-width: 991px) {
-    .portfolio-wrapper {
-    padding: 0 20px;
-    }
-    
-    .nav-container {
-    padding: 0 20px;
-    }
-    
-    .hero-title {
-    font-size: 40px;
-    line-height: 44px;
-    }
-    
-    .about-section {
-    font-size: 40px;
-    line-height: 48px;
-    }
-    
-    .testimonials-title {
-    font-size: 40px;
-    }
-    
-    .testimonials-grid {
-    margin-top: 40px;
-    }
-    
-    .contact-button {
-    padding: 0 20px;
-    }
 }
